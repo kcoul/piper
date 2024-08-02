@@ -589,7 +589,7 @@ void textToAudio(PiperConfig &config, Voice &voice, std::string text,
     }
 
     if (audioCallback) {
-      // Call back must copy audio since it is cleared afterwards.
+      // Call back must copy audio since it is cleared afterward.
       audioCallback();
       audioBuffer.clear();
     }
